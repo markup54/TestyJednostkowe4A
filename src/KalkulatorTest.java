@@ -47,4 +47,14 @@ class KalkulatorTest {
     void testCzyLiczbaPierwszaJezeliLiczbaPierwsza(){
         Assertions.assertTrue(Kalkulator.czyLiczbaPierwsza(17));
     }
+
+
+    @Test
+    void testPotegaDoZerowej(){
+        Assertions.assertEquals(1,Kalkulator.potega(2,0));
+    }
+    @Test
+    void testPotegaDoPierwszej(){
+        Assertions.assertEquals(10,Kalkulator.potega(10,1));
+    }
 }

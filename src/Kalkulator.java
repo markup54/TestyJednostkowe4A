@@ -13,7 +13,8 @@ public class Kalkulator {
         if(liczba == 1) {
             return false;
         }
-        for (int i = 2; i < liczba; i++) {
+        int pierwiastek = (int)Math.sqrt(liczba);
+        for (int i = 2; i <= pierwiastek; i++) {
             if(liczba%i==0){
                 return false;
             }
@@ -21,6 +22,8 @@ public class Kalkulator {
         return true;
     }
 
-
+public static int potega(int podstawa,int wykladnik){
+        return 1;
+}
 
 }
