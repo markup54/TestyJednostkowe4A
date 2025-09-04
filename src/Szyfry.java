@@ -25,5 +25,10 @@ public class Szyfry {
         return zaszyfrowane;
     }
 
+    public String szyfrCezaraAscii(String slowo,int klucz){
+        String zaszyfrowane = "";
+
+        return zaszyfrowane;
+    }
 
 }
