@@ -1,5 +1,22 @@
 public class Szyfry {
+public static String szyfrKwadratem(String slowo){
+    String zaszyfrowane = "";
+    int bok = 0;
+    while (bok*bok<slowo.length()){
+        bok++;
+    }
+    while (bok*bok>slowo.length()){
+        slowo = slowo +" ";
+    }
+    for (int i = 0; i < bok; i++) {
+        for (int j = 0; j < bok; j++) {
+            zaszyfrowane = zaszyfrowane + slowo.charAt(i+bok*j);
+        }
+    }
 
+
+    return zaszyfrowane.trim();
+}
 
 
 
